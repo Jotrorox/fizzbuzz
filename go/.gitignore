@@ -1,0 +1,20 @@
+# Compiled Object files, Static and Dynamic libs (Shared Objects)
+*.o
+*.a
+*.so
+
+# Executables
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Testing
+*.test
+
+# Output files
+*.out
+
+# Dependency directories
+vendor/
