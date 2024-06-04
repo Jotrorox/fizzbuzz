@@ -1,0 +1,10 @@
+# Compiled Lua files
+*.out
+
+# Editor/IDE specific
+.vscode/
+.idea/
+
+# Dependency directories
+/bin/
+/lib/
