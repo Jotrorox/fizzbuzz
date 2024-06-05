@@ -1,0 +1,3 @@
+name=Go
+author=jotrorox
+run=run.sh <arg>

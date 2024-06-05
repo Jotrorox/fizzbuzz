@@ -1,0 +1,3 @@
+name=TypeScript (Node)
+author=jotrorox
+run=run.sh <arg>

@@ -1,0 +1,3 @@
+name=Rust
+author=jotrorox
+run=run.sh <arg>
