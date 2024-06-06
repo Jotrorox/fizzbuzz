@@ -1,0 +1,18 @@
+# Compiled artifacts
+/_build/
+/deps/
+
+# Dependency directories
+/_build/
+/deps/
+
+# Ignore compiled output
+*.beam
+*.so
+*.o
+
+# Ignore mix lock file
+mix.lock
+
+# Ignore generated docs
+/doc/
