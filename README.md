@@ -9,18 +9,19 @@
   <img src="https://img.shields.io/github/stars/jotrorox/fizzbuzz?style=flat-square" alt="GitHub Stars Badge">
 </p>
 
+<hr />
+
 <p align="center>
-    <a href="#description">Description</a> •
-    <a href="#how-to-use">How To Use</a> •
-    <a href="#license">License</a> •
-    <a href="#contribute">Contribute</a> •
+    <a href="#description">Description</a> &#xa0; | &#xa0; 
+    <a href="#how-to-use">How To Use</a> &#xa0; | &#xa0; 
+    <a href="#license">License</a> &#xa0; | &#xa0; 
+    <a href="#contribute">Contribute</a> &#xa0; | &#xa0; 
     <a href="#authors">Authors</a>
 </p>
 
 ## Description
 
-Fizz Buzz is a project, that is made to give an overview of diffrent languages. Or to be practical, here you see how to write a simple Fizz Buzz program in different programming languages. All of that written in clean and well documented code.\
-Why am I doing this? 1. I think it is interersting how different languages are approaching and solving this simple Program and 2. I saw the challenge in the CodeSloth Newsletter and it kinda got out of hand. So here we are.
+Fizz Buzz is a project, that is made to give an overview of diffrent languages. Or to be practical, here you see how to write a simple Fizz Buzz program in different programming languages. All of that written in clean and well documented code. Why am I doing this? 1. I think it is interersting how different languages are approaching and solving this simple Program and 2. I saw the challenge in the CodeSloth Newsletter and it kinda got out of hand. So here we are.
 
 ## How To Use
 
