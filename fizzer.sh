@@ -1,41 +1,66 @@
 #!/bin/bash
 
 list() {
-    printf "%-20s %-20s\n" "Name" "Author"
-    printf "%-20s %-20s\n" "----" "------"
+    # Colors
+    RED='\033[0;31m'
+    GREEN='\033[0;32m'
+    YELLOW='\033[0;33m'
+    BLUE='\033[0;34m'
+    PURPLE='\033[0;35m'
+    CYAN='\033[0;36m'
+    NC='\033[0m' # No Color
+    # Formatting
+    BOLD=$(tput bold)
+    RESET=$(tput sgr0)
+
+    printf "${BOLD}${GREEN}%-20s %-20s${RESET}\n" "Name" "Author"
+    printf "${BOLD}${GREEN}%-20s %-20s${RESET}\n" "----" "------"
     for dir in $(ls -d */); do
         if [ -f "$dir"*.fbc ]; then
             file=$(ls $dir*.fbc)
             name=$(grep -o '^name=.*' $file | cut -d'=' -f2)
             author=$(grep -o '^author=.*' $file | cut -d'=' -f2)
-            printf "%-20s %-20s\n" "$name" "$author"
+            printf "${BOLD}${CYAN}%-20s %-20s${RESET}\n" "$name" "$author"
         fi
     done
 }
 
 run() {
+        # Colors
+    RED='\033[0;31m'
+    GREEN='\033[0;32m'
+    YELLOW='\033[0;33m'
+    BLUE='\033[0;34m'
+    PURPLE='\033[0;35m'
+    CYAN='\033[0;36m'
+    NC='\033[0m' # No Color
+    # Formatting
+    BOLD=$(tput bold)
+    RESET=$(tput sgr0)
+
     if [ -d "$1" ]; then
         if [ -z "$(ls -A $1/*.fbc 2>/dev/null)" ]; then
-            echo "No .fbc file found in the directory."
-            echo "Please provide a valid directory with .fbc file."
+            echo -e "${RED}No .fbc file found in the directory.${NC}"
+            echo -e "${RED}Please provide a valid directory with .fbc file.${NC}"
             return
         fi
 
         file=$(ls $1/*.fbc)
         run_command=$(grep -o '^run=.*' $file | cut -d'=' -f2)
         if [ -z "$run_command" ]; then
-            echo "No run command found in the .fbc file."
-            echo "Please provide a valid run command."
+            echo -e "${RED}No run command found in the .fbc file.${NC}"
+            echo -e "${RED}Please provide a valid run command.${NC}"
             return
         fi
 
         cd $1
         run_command=${run_command//<arg>/$2}
+        echo -e "${GREEN}Now running: $run_command${NC}"
         eval $run_command
         cd ..
     else
-        echo "That directory does not exist."
-        echo "Please write the name of the directory you would like to run."
+        echo -e "${RED}That directory does not exist.${NC}"
+        echo -e "${RED}Please write the name of the directory you would like to run.${NC}"
     fi
 }
 
