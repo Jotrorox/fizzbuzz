@@ -1,0 +1,24 @@
+# Perl-specific files
+*.swp
+*.bak
+*.tmp
+
+# Build artifacts
+/build/
+/cover_db/
+
+# Dependency directories
+/local/
+/vendor/
+
+# Environment-specific files
+/.env
+/.env.*
+
+# Logs and temporary files
+/log/
+/tmp/
+
+# IDE-specific files
+/.idea/
+/.vscode/
