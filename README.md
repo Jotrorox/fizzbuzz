@@ -11,7 +11,7 @@
 
 <hr />
 
-<p align="center>
+<p align="center">
     <a href="#description">Description</a> &#xa0; | &#xa0; 
     <a href="#how-to-use">How To Use</a> &#xa0; | &#xa0; 
     <a href="#license">License</a> &#xa0; | &#xa0; 
@@ -21,7 +21,7 @@
 
 ## Description
 
-Fizz Buzz is a project, that is made to give an overview of diffrent languages. Or to be practical, here you see how to write a simple Fizz Buzz program in different programming languages. All of that written in clean and well documented code. Why am I doing this? 1. I think it is interersting how different languages are approaching and solving this simple Program and 2. I saw the challenge in the CodeSloth Newsletter and it kinda got out of hand. So here we are.
+Fizz Buzz is a project, that is made to give an overview of diffrent languages. Or to be practical, here you see how to write a simple Fizz Buzz program in different programming languages. All of that written in clean and well documented code. Why am I doing this? 1. I think it is interersting how different languages are approaching and solving this simple Program and 2. I saw the challenge in the [CodeSloth Newsletter](https://slothbytes.beehiiv.com/subscribe?ref=leLwLkdsZI) and it kinda got out of hand. So here we are.
 
 ## How To Use
 
