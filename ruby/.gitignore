@@ -1,0 +1,21 @@
+# Ignore bundler files
+/.bundle/
+
+# Ignore Gemfile.lock
+Gemfile.lock
+
+# Ignore generated documentation
+/doc/
+
+# Ignore IDE and editor files
+/.vscode/
+/.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore system and temporary files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
