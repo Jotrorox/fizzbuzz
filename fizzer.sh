@@ -39,12 +39,48 @@ run() {
     fi
 }
 
+help() {
+    # Colors
+    RED='\033[0;31m'
+    GREEN='\033[0;32m'
+    YELLOW='\033[0;33m'
+    BLUE='\033[0;34m'
+    PURPLE='\033[0;35m'
+    CYAN='\033[0;36m'
+    NC='\033[0m' # No Color
+
+    # Formatting
+    BOLD=$(tput bold)
+    ITALIC=$(tput sitm)
+    UNDERLINE=$(tput smul)
+    RESET=$(tput sgr0)
+
+    echo -e "${BOLD}Help:${RESET} This script can take one of 3 arguments [ ${GREEN}list${RESET} | ${GREEN}run${RESET} | ${GREEN}help${RESET} ]"
+    echo
+
+    echo -e "${BOLD}Usage:${RESET}"
+    echo -e "  ${GREEN}list:${RESET} List all the FizzBuzz files in the current directory and their authors."
+    echo -e "        ${ITALIC}Example:${RESET} ./fizzer.sh list"
+    echo
+
+    echo -e "  ${GREEN}run:${RESET}  Run a FizzBuzz file in a specified directory with an optional argument."
+    echo -e "        ${ITALIC}Example:${RESET} ./fizzer.sh run <directory> <argument>"
+    echo
+
+    echo -e "${BOLD}Project Information:${RESET}"
+    echo -e "  ${GREEN}GitHub:${RESET} https://github.com/jotrorox/fizzbuzz"
+    echo -e "  ${GREEN}Author:${RESET} Johannes (Jotrorox)"
+    echo -e "  ${GREEN}Email:${RESET} mail@jotrorox.com"
+    echo -e "  ${GREEN}Website:${RESET} https://jotrorox.com"
+    echo -e "  ${GREEN}Version:${RESET} 1.0"
+    echo -e "  ${GREEN}License:${RESET} AGPLv3"
+    echo
+}
+
 if [ "$1" == "list" ]; then
     list
 elif [ "$1" == "run" ]; then
     run $2 $3
-elif [ "$1" == "help" ]; then
-    echo "Help: This script can take one of 3 arguments [ list | run | help ]"
 else
-    echo "Invalid argument. Please use [ list | run | help ]"
+    help
 fi
