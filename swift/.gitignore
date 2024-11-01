@@ -1,0 +1,12 @@
+# Environment-specific files
+/.env
+/.env.*
+
+# Temporary files
+*.swp
+*.bak
+*.tmp
+
+# IDE-specific files
+/.idea/
+/.vscode/
